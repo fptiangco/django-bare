@@ -1,0 +1,28 @@
+name: Tag
+
+on:
+  push:
+    tags:        
+      - '*'
+jobs:
+
+  # codecov:
+  #   uses: fptiangco/github-actions-workflows/.github/workflows/test_codecov.yml@main
+  #   secrets:
+  #      codecovtoken: ${{ secrets.CODECOV_TOKEN }}
+
+  # black:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: psf/black@stable
+
+  docker-build-push:
+    #needs: [ codecov, black ]
+    uses: fptiangco/github-actions-workflows/.github/workflows/build_push.yml@main
+    with:
+      image_name: ${{github.event.repository.name}}
+      tag: ${{github.ref_name}}
+    secrets:
+      registry_username: ${{secrets.DOCKER_USER}}
+      registry_password: ${{secrets.DOCKER_PASSWORD}}
