@@ -1,6 +1,7 @@
 | | |
 |---|---|
 | Docker | [![Docker](https://img.shields.io/docker/cloud/build/fptiangco/django-bare?label=Docker&style=flat)](https://hub.docker.com/r/fptiangco/django-bare/builds) ![Docker Pulls](https://img.shields.io/docker/pulls/fptiangco/django-bare) ![Docker Image Version (latest semver)](https://img.shields.io/docker/v/fptiangco/django-bare?sort=semver) |
+| Scans | [![Updates](https://pyup.io/repos/github/fptiangco/django-bare/shield.svg)](https://pyup.io/repos/github/fptiangco/django-bare/) |
 
 ### Quickstart
 * A bare django image built from the first section of the official django tutorial
