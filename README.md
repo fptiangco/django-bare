@@ -17,7 +17,7 @@ docker run -p 8000:8000 django-bare
 ```
 ##### Dockerhub run
 ```
-docker run -p 8000:8000 fptiangco/django-bare:<tag>
+docker run -p 8000:8000 fptiangco/django-bare
 ```
 ##### View
 http://localhost:8000
