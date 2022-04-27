@@ -22,6 +22,5 @@ docker run -p 8000:8000 fptiangco/django-bare
 ```
 ##### View
 http://localhost:8000
-http://localhost:8000/admin 
-* djangobareadmin / djangobareadmin
+http://localhost:8000/admin (djangobareadmin / djangobareadmin)
 
